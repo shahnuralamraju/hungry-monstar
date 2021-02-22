@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo-div"><a href="#"><img src="cooking.png" class="logo"></a><span class="logo-name">Hungry
+                        Monstar</span></div>
+                <ul>
+                    <li> Home</li>
+                    <li> About</li>
+                    <li> Recipes</li>
+                    <li> Blog</li>
+                </ul>
+            </nav>
+        </header>
+
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="search-input" type="text" class="form-control" placeholder="&#xF002; Search For meal...." style="font-family:Arial, FontAwesome" />
+                <div class="input-group-append">
+                    <button onclick="searchButton()" type="button" class="btn btn-danger">Search</button>
+                    <button onclick="refreshButton()" type="button" class="btn btn-success"><i class="fa fa-close"
+                            style="font-size:23px;color:white"></i></button>
+                </div>
+            </div>
+        </form>
+        <div id="second-div">
+            <h4 id="error-msg"></h4>
+            <div id="ingredient-div">
+
+            </div>
+
+            <ul id="un-orderlist">
+
+            </ul>
+
+        </div>
+        <div id="meal-div">
+
+        </div>
+
+    </div>
+
+
+    <!-- this is javascript code link  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
